@@ -225,10 +225,6 @@ form div{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; */
 }
 
 input, textarea {
@@ -243,7 +239,7 @@ input[type=text], input[type=email],input[type=tel]{
     padding: 10px;
 }
 input:focus, textarea:focus, button:focus {
-    box-shadow: 0 0 1px 3px rgba(102, 101, 101, 0.1);
+    box-shadow: 0 1px rgba(77, 71, 71, 0.9);
     outline: none;
     z-index: 2;
     transform: scale(1.01, 1.01)
