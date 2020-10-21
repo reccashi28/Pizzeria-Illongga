@@ -1,0 +1,277 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/mq.css">
+    <script src="https://kit.fontawesome.com/4687fe535c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <title>Restaurant Illongga</title>
+</head>
+<body>
+    <div class="main-background"> <!--  ------------- background ------------------- -->
+        
+        <img class="bg-image" src="/images/main-background-il-res.jpg" alt="background-image">
+        
+        <!-- -------------- body container -------------- -->
+        <div class="body-wrapper">
+
+        <!-- -------------- header ------------------- -->
+            <div class="header">
+                <div class="empty-box"></div>    <!--  for top spacing in header  -->
+                 <div class="nav-wrapper"> <!------------ nav start ----------- -->
+                    <nav class="main-nav text">
+                        <ul id="main-nav-ul">
+                            <li><a class="nav-list current" href="#startseite" data-target="#startseite">Startseite</a> </li>
+                            <li><a class="nav-list" href="#speisekarte" data-target="#speisekarte">Speisekarte</a></li>
+                            <li><a class="nav-list" href="#map" data-target="#map">Ihr Weg Zu Uns</a> </li>
+                            <li><a class="nav-list" href="#kontaktformular" data-target="#kontaktformular">Kontaktformular</a></li>
+                            <li><a class="nav-list" href="#impressum" data-target="#impressum">Impressum</a></li>
+                            <li><a class="nav-list" href="#datenschutz" data-target="#datenschutz">Datenschutzerklärung</a></li>
+                        </ul>
+                    </nav> <!-- ------------ van end ---------- -->
+                    
+                </div>
+                <div class="title-wrapper nav-wrapper text"> 
+                    <h1 style="font-family: Kaushan Script, sans-serif;">Ristorante Pizzeria de Illongga</h1>
+                </div>
+             </div>   <!-------- header end ----- -->
+
+            <main> 
+                 <div class="content-wrapper"> <!-- ------------- content ---------- -->
+                    
+                    <!-- ---------- left content ---------- -->
+                    <div class="left-content"> 
+                        <!-- --------------------------- home -------------------------  -->
+                        <div id="startseite" class="data-content">
+                            <div class="line">
+                                <hr>
+                                <i class="fa fa-angle-down"></i>
+                                <hr>
+                            </div>
+                            <h1 class="about-us text-content">Über uns</h1>
+                            <h2 class="text-content">The Restaurant</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea quas ratione impedit animi sunt consectetur
+                                 maxime voluptatem. Rerum alias impedit, aspernatur facere inventore error amet excepturi porro ullam 
+                                 praesentium nisi veritatis, blanditiis similique libero asperiores dolorum dolore illum exercitationem iusto 
+                                 veniam eveniet laudantium. Veritatis vitae doloremque reiciendis est consectetur qui nobis veniam similique, 
+                                 deserunt deleniti mollitia eius officia neque eaque? Nam consectetur impedit, inventore necessitatibus harum 
+                                 blanditiis sapiente minima dolorum eaque officiis eveniet quo sit ratione earum quaerat nesciunt culpa hic sint, 
+                                 laboriosam nulla maxime laborum! Iure, iusto, magni ratione tenetur, illum ipsa praesentium maxime sequi dolorum 
+                                 atque inventore commodi?&nbsp;</p>
+                            <div class="image-container">                               
+                                    <img src="/images/image1.jpg" alt="">
+                                    <img src="/images/image2.jpg" alt="">
+                                    <img src="/images/image3.jpg" alt="">
+                                    <img src="/images/image4.jpg" alt="">
+                                    <img src="/images/image5.jpg" alt="">
+                                    <img src="/images/image6.jpg" alt="">                               
+                            </div>
+                        </div>
+                        <!-- -------------- speisekarte ------------------------ -->
+                        <div id="speisekarte" class="data-content" data-menu-content="speisekarte">
+                            <h1 class="text-content">Speisekarte</h1>
+                            <hr class="hr">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque culpa quam voluptatem 
+                                aperiam eum soluta eos, tenetur nihil nulla amet!</p>
+                            <i class="fas fa-file-pdf"></i>
+                            <strong><a class="menuCard" href="/images/Speisekarte.pdf" download>Speisekarte.pdf</a></strong>
+                            <p><strong>Wir bieten auch saisonale Speisekarten an.</strong></p>
+                        </div>
+                        <!-- --------------------- map ---------------------- -->
+                        <div id="map" class="data-content" data-menu-content="map">
+                            <h1 class="text-content h-map">Ihr Weg zu uns</h1>
+                            <hr class="hr"><br>
+                            <h2 class="text-content">Karte</h2> <br>
+                            <div id="map-content"></div>
+                            
+                        </div>
+                        <!-- ------------------------- contact form ------------------------ -->
+                        <div id="kontaktformular" class="data-content" data-menu-content="kontaktformular">
+                            <h1 class="text-content">Kontaktformular</h1>
+                            <hr class="hr">
+                            <form>
+                                <div>
+                                    <label for="fname">Vorname *</label>
+                                    <input type="text" id="fname" name="fname" required>
+                                </div>
+                                <div>
+                                    <label for="lname">Nachname *</label>
+                                    <input type="text" id="lname" name="lname" required>
+                                </div>
+                                <div>
+                                    <label for="email">E-Mail *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div>
+                                    <label for="phone">Telefon</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                                <div>
+                                    <label for="comment">Nachricht</label>
+                                    <textarea type="text" id="comment" maxlength="100" name="comment" placeholder="Meine Nachricht"></textarea>
+                                </div>
+                                <div class="button">
+                                    <button type="submit">Absenden</button>
+                                </div>
+                              </form>
+                        </div>
+                        <!-- ------------------------------ impressum -------------------------- -->
+                        <div id="impressum" class="data-content" data-menu-content="impressum">
+                            <h1 class="text-content">Impressum</h1>
+                            <hr class="hr">
+                            <p>Impressum aut §5 Telemediengesetz und §55 Rundfunk-Staatsvertrag</p>
+                                <p><strong>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Cupiditate, inventore.</strong></p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores numquam beatae assumenda, illo natus quaerat optio 
+                                    consequuntur quia, porro inventore dicta. Cum accusantium placeat eos iusto. Modi adipisci itaque autem.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolore iure voluptatem numquam. Obcaecati enim 
+                                    deserunt quo aliquid. Quasi voluptates quidem libero ex in magni tenetur dolor doloribus, excepturi sit est 
+                                    voluptate minima quibusdam ab odio soluta hic. At veniam expedita magnam delectus labore nihil asperiores voluptate 
+                                    porro beatae nostrum iste distinctio ullam, ad unde voluptas quasi, ipsum sint autem quibusdam ducimus. Maiores 
+                                    temporibus hic veniam recusandae obcaecati magnam. Harum quia tempore ex aut corporis explicabo, perferendis 
+                                    saepe sint excepturi a fugiat possimus. Ratione, odio? Fuga, impedit eius. Odit placeat quibusdam totam. Quisquam 
+                                    eos consequatur aliquid voluptatibus officia corrupti perspiciatis?</p>
+                                <h3><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, velit!</strong></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error odit assumenda aperiam eveniet maiores qui minus 
+                                    porro sed blanditiis ea alias neque, cupiditate nihil consectetur quia sit rem voluptate cumque consequatur 
+                                    delectus facilis eum. Quibusdam asperiores dolorem ipsa distinctio, minima dignissimos ea officia molestias 
+                                    in voluptatum repellat, autem veritatis reprehenderit consectetur impedit obcaecati unde vel temporibus quaerat!
+                                    Obcaecati ipsa provident, perspiciatis quia consequuntur necessitatibus et ipsum suscipit. Quas, praesentium natus.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non atque numquam voluptas dolore possimus exercitationem recusandae 
+                                    soluta architecto omnis. Quaerat culpa eius ullam perspiciatis, amet repellendus quibusdam minima odio autem.</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque provident molestias vel perferendis soluta vitae expedita. 
+                                    Laudantium, aliquam deserunt accusamus qui illo sit eaque cum veniam mollitia autem pariatur, debitis rem 
+                                    fugiat modi ipsa fugit porro dolores id reprehenderit. Rerum ipsa, consequatur illo fuga cumque est quae deserunt, 
+                                    sed nam ipsum expedita commodi blanditiis neque sit doloremque! Quos, ipsam placeat.</p>
+                                    <h3><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, velit!</strong></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptatum cumque perferendis ad esse deleniti 
+                                    provident facilis et deserunt nobis molestiae consectetur eligendi magnam nemo pariatur impedit animi minus 
+                                    recusandae expedita, tenetur vel necessitatibus. Autem, provident deleniti mollitia repellendus vel quo assumenda 
+                                    cumque maiores perspiciatis commodi nihil quibusdam natus saepe eius minus recusandae reiciendis omnis iste aliquam 
+                                    aliquid corporis eaque ipsa. Maiores laboriosam ab repellat voluptatibus reiciendis corrupti odit cupiditate. 
+                                    Eaque voluptate ratione corporis vel sapiente dolores a quisquam, expedita laudantium dolor laborum quibusdam 
+                                    aperiam porro? Eius error vel tenetur sed magnam culpa delectus quisquam facilis eligendi temporibus distinctio 
+                                    corrupti veritatis dolores iure cumque repudiandae non aut, repellendus reprehenderit? Ratione neque fugit quaerat 
+                                    maxime distinctio minus, dicta doloribus asperiores labore libero vitae eius velit dignissimos ipsam. Reprehenderit 
+                                    numquam dicta fugit ipsum vero minima voluptate repudiandae ducimus ut, unde alias ab quia, doloremque, provident 
+                                    distinctio quasi minus. Voluptate beatae deserunt quaerat?</p>
+                         </div> <!-------- end of impressum ------------ -->
+                        <!-- ------------------- datenschutz ------------------------ -->
+                        <div id="datenschutz" class="data-content" data-menu-content="datenschutz">
+                            <h1 class="text-content">Datenschutzerklärung</h1>
+                            <hr class="hr">
+                               <br><h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, reprehenderit.</h3>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nostrum molestias 
+                                   temporibus fugiat fuga sapiente laborum reiciendis soluta exercitationem! A, 
+                                   voluptatem? Natus blanditiis, nam, dicta ipsam impedit pariatur ducimus minus 
+                                   sint saepe dignissimos eveniet corrupti quasi rem ad! Quidem velit, magnam est, 
+                                   et vero pariatur laboriosam, recusandae dolor ex culpa blanditiis tempora quia 
+                                   voluptas itaque commodi repellendus libero atque. Explicabo id fuga fugiat? 
+                                   Praesentium iste sit dolorum quos quasi beatae laudantium earum iusto quas, 
+                                   itaque nostrum ex debitis necessitatibus, adipisci consectetur neque facere 
+                                   nam? Vero tempora dignissimos quis ipsum repellendus officiis qui sit inventore 
+                                   ullam, autem, quas suscipit commodi obcaecati?</p> <br><br>
+                                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, reprehenderit.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nostrum molestias 
+                                    temporibus fugiat fuga sapiente laborum reiciendis soluta exercitationem! A, 
+                                    voluptatem? Natus blanditiis, nam, dicta ipsam impedit pariatur ducimus minus 
+                                    sint saepe dignissimos eveniet corrupti quasi rem ad! Quidem velit, magnam est, 
+                                    et vero pariatur laboriosam, recusandae dolor ex culpa blanditiis tempora quia 
+                                    voluptas itaque commodi repellendus libero atque. Explicabo id fuga fugiat? 
+                                    Praesentium iste sit dolorum quos quasi beatae laudantium earum iusto quas, 
+                                    itaque nostrum ex debitis necessitatibus, adipisci consectetur neque facere 
+                                    nam? Vero tempora dignissimos quis ipsum repellendus officiis qui sit inventore 
+                                    ullam, autem, quas suscipit commodi obcaecati?</p><br><br>
+                                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, reprehenderit.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nostrum molestias 
+                                    temporibus fugiat fuga sapiente laborum reiciendis soluta exercitationem! A, 
+                                    voluptatem? Natus blanditiis, nam, dicta ipsam impedit pariatur ducimus minus 
+                                    sint saepe dignissimos eveniet corrupti quasi rem ad! Quidem velit, magnam est, 
+                                    et vero pariatur laboriosam, recusandae dolor ex culpa blanditiis tempora quia 
+                                    voluptas itaque commodi repellendus libero atque. Explicabo id fuga fugiat? 
+                                    Praesentium iste sit dolorum quos quasi beatae laudantium earum iusto quas, 
+                                    itaque nostrum ex debitis necessitatibus, adipisci consectetur neque facere 
+                                    nam? Vero tempora dignissimos quis ipsum repellendus officiis qui sit inventore 
+                                    ullam, autem, quas suscipit commodi obcaecati?</p><br><br>
+                                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, reprehenderit.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nostrum molestias 
+                                    temporibus fugiat fuga sapiente laborum reiciendis soluta exercitationem! A, 
+                                    voluptatem? Natus blanditiis, nam, dicta ipsam impedit pariatur ducimus minus 
+                                    sint saepe dignissimos eveniet corrupti quasi rem ad! Quidem velit, magnam est, 
+                                    et vero pariatur laboriosam, recusandae dolor ex culpa blanditiis tempora quia 
+                                    voluptas itaque commodi repellendus libero atque. Explicabo id fuga fugiat? 
+                                    Praesentium iste sit dolorum quos quasi beatae laudantium earum iusto quas, 
+                                    itaque nostrum ex debitis necessitatibus, adipisci consectetur neque facere 
+                                    nam? Vero tempora dignissimos quis ipsum repellendus officiis qui sit inventore 
+                                    ullam, autem, quas suscipit commodi obcaecati?</p><br><br>
+                            
+                            </div>
+                    </div> <!------------- end of left content ---------------- -->
+
+                   <!-- ------------- right content ------------- -->
+                     <div class="right-content">
+                            <div class="sidebar-wrap">
+                                <p class="text-content" style="font-size: 20px;">Unsere Öffnungszeiten</p>
+                                <div>
+                                    <h4>Montag</h4>
+                                    <span>geschlossen</span><br>
+                                    
+                                </div>
+                                <div>
+                                    <h4>Dienstag</h4>
+                                    <span>11:45–14:30</span><br>
+                                    <span>18:00–22:30</span>
+                                    
+                                </div>
+                                <div>
+                                    <h4>Mittwoch</h4>
+                                    <span>11:45–14:30</span><br>
+                                    <span>18:00–22:30</span>
+                                </div>
+                                <div>
+                                    <h4>Donnerstag</h4>
+                                    <span>11:45–14:30</span><br>
+                                    <span>18:00–22:30</span>
+                                </div>
+                                <div>
+                                    <h4>Freitag</h4>
+                                    <span>11:45–14:30</span><br>
+                                    <span>18:00–22:30</span>
+                                </div>
+                                <div>
+                                    <h4>Samstag</h4>
+                                    <span>11:45–14:30</span><br>
+                                    <span>18:00–22:30</span>
+                                </div>
+                                <div>
+                                    <h4>Sonntag</h4>
+                                    <span>11:45–14:30</span><br>
+                                    <span>18:00–22:30</span>
+                                </div>
+                                <hr class="hr">
+                                <h4 class="text-content" style="font-size: 20px;">Telefon</h4>
+                               <strong><p>089384658663</p></strong>
+                               <hr class="hr">
+                                <h4 class="text-content" style="font-size: 20px;">Adresse</h4>
+                                <p>33 Lowell St.<br>10010 <br>Iste, odio</p>
+                            </div>   
+                    </div> <!--------- end of right content ----------- -->
+                    
+                </div> <!--  ----------- end of content wrapper --------------- -->
+            </main>
+            <!-- -------------- footer --------------- -->
+                <footer class="nav-wrapper footer">
+                    <p>&copy; R.Meyer </p>
+                </footer>
+            
+         </div> <!--------------- end of body wrapper -------------- -->
+     </div> <!-- ---------- end of background -------------- -->
+    <script src="/js/app.js"></script>  
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY7QjHWSOYt4dqu5nl9aKODFSGhLzFAGw&callback=initMap">
+    </script>
+</body>
+</html>

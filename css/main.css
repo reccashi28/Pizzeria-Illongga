@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* ============================== Header =====================================
+============================================================================== */
+.bg-image {
+    z-index: -100;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.6;
+}
+.text {
+    font-family: Kaushan Script, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    line-height: initial;
+}
+.body-wrapper {
+    max-width: 1150px;
+    margin: 0 auto 0 auto;
+    background-color: #F1E2A9;
+
+}
+
+.header {
+    background-image: url('/images/bg-header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    
+    
+}
+.empty-box {
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.nav-wrapper {
+    width: 1190px;
+    background-color: #671212;
+    position: relative;
+    z-index: 300;
+    height: auto;
+    margin-left: -22.5px;
+}
+
+.nav-wrapper::before, .nav-wrapper::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: .6;
+    z-index: -3;
+}
+.nav-wrapper::before {
+    border-bottom: 15px solid #671212;
+    border-left: 23px solid transparent;
+    border-right: 0 solid transparent;
+
+}
+.nav-wrapper::before {
+    top: -15px;
+    left: 0;
+    
+}
+
+.nav-wrapper::after {
+    border-bottom: 15px solid #671212;
+    border-left: 0 solid transparent;
+    border-right: 20px solid transparent;
+}
+.nav-wrapper::after {
+    top: -15px;
+    right: 0;
+}
+
+#main-nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-nav-ul li {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    height: 100%;
+    
+    
+} 
+.nav-list{
+    text-decoration: none;
+    cursor: pointer;
+    color: white ;
+}
+
+.current{
+    background-color: white;
+    color: #713311 !important;
+    padding: 5px;
+    border-radius: 2px;
+
+}
+.title-wrapper {
+    position: absolute;
+    width: 1190px;
+    margin-left: -20px;
+    color: #FFFFFF;
+    background-color: #671212;
+    bottom: 0;
+    text-align: center;
+
+}
+
+/*   ===================== end of Header ==================== */
+
+/* ============================= content ==================================== */
+.line {
+    display: flex;
+    align-items: center;
+}
+.line hr {
+    width: 50%;
+    background-color: black;
+    height: 3px;
+    border-width: 0;
+    vertical-align: middle;
+}
+
+.line i {
+    vertical-align: middle;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.content-wrapper {
+    display: flex;
+    position: relative;
+}
+
+.text-content {
+    font-family: Kaushan Script, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    line-height: initial;
+    color: #713311;
+}
+.hr{
+    width: 100%;
+    border: 1px solid black;
+    margin: 1rem 0 1.5rem 0;
+}
+
+/* ================================ startseite =============================== */
+
+.left-content {
+    padding: 4rem 2rem 3rem 2rem;
+    width: 80%;
+    position: relative;
+    height: auto;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 9px;
+    grid-template-rows: 1fr 1fr 1fr;
+    z-index: -2;    
+}
+
+.image-container img {
+    width: 100%;
+    height: 300px;
+    border: 2px solid white;
+
+}
+.image-container img:hover {
+    transform: scale(1.05);
+    transition: .25s linear;
+    box-shadow: 0px 8px 20px 10px grey;
+    z-index: 3;
+}
+.image-container:hover img:not(:hover) {
+        filter: grayscale(1);
+        opacity: .75;
+        transition: 0.5s linear;
+        transform: scale(0.8, 0.8);
+        transform: rotate(10deg);
+        z-index: 1;
+  }
+
+.left-content h1, .left-content h2, .left-content p {
+    padding: 10px;
+}
+
+/* ============================ speisekarte ============== */
+.menuCard {
+    color: black;
+    font-size: 18px;
+}
+
+#speisekarte i {
+    /* background-color: red; */
+    color: rgb(168, 70, 70);
+    font-size: 50px;
+    padding: 2rem 0 2rem 0.5rem;
+}
+
+/* ====================== contact form =================== */
+form {
+    width: 100%;
+    /* border: 2px solid red; */
+    margin-top: 4rem;
+    position: relative;
+}
+form div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+}
+
+input, textarea {
+    width: 500px;
+    background-color: #F1E2A9;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 2px;  
+}
+input[type=text], input[type=email],input[type=tel]{
+    background-color: #F1E2A9;
+    padding: 10px;
+}
+input:focus, textarea:focus, button:focus {
+    box-shadow: 0 0 1px 3px rgba(102, 101, 101, 0.1);
+    outline: none;
+    z-index: 2;
+    transform: scale(1.01, 1.01)
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  box-shadow: 0 0 0 30px #F1E2A9 inset;
+  border: 1px solid black;
+  
+}
+
+textarea {
+    resize: vertical;
+    max-width: 500px;
+    height: 70px;
+    max-height: 200px;
+    width: 500px;
+}
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+button {
+    width: 100px;
+    border-radius: 2px;
+    box-shadow: 0 10px 10px -10px gray;
+    background-color: #F1E2A9;
+    padding: 10px;
+} /*========== end of contact form ================ */
+
+/* ======================== map ========================== */
+#map-content {
+    width: 100%;
+    height:400px;
+    background-color: gray;
+    border: 2px solid black;
+} /* ======================== end of map ========================== */
+
+/* =================================== right content ============================== */
+.right-content {
+    border-left: 2px solid white;
+    padding: 4rem 2rem 3rem 2rem;
+    width: 20%;
+    height: auto;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.sidebar-wrap{
+    text-align: center;
+}
+
+.sidebar-wrap div {
+    text-align: center;
+    /* font-weight: bold; */
+    padding: 1rem;
+    font-size: 15px;
+}
+.sidebar-wrap div h4 {
+    padding-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.sidebar-wrap h4 {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    
+}
+
+.sidebar-wrap div span {
+    padding: 2px;
+}
+/* ================================== footer ============================== */
+
+.footer {
+    color: white;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    bottom: 4rem;
+    position: relative;
+    margin-top: 7rem;
+}
+
+
+
+
+
+
