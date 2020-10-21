@@ -47,9 +47,10 @@
     .image-container img {
         margin: 1rem 0 1rem 0;
         border: 2px solid white;
+        height: 200px;
     }
     input, textarea {
-        width: 250px;
+        width: 180px;
         height: 30px;
     }
     textarea{
@@ -59,11 +60,23 @@
         border-left: none;
         width: 100%;   
     }
+    .nav-wrapper-sm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-wrapper-sm h1{
+        font-size: 25px;
+    }
 }
 @media only screen and (min-width: 556px) {
     .image-container {
         margin: auto;
         width: 80%;
+    }
+    .image-container img {
+        height: 200px;
     }
 
 } 
@@ -71,6 +84,9 @@
     .image-container {
         margin: auto;
         width: 75%;
+    }
+    .image-container img {
+        height: 300px;
     }
 
 } 
