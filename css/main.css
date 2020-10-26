@@ -185,7 +185,7 @@
 .image-container img:hover {
     transform: scale(1.05);
     transition: .25s linear;
-    box-shadow: 0px 8px 20px 10px grey;
+    box-shadow: 0px 8px 20px 1px rgba(255, 255, 255, 0.4);
     z-index: 3;
 }
 .image-container:hover img:not(:hover) {
