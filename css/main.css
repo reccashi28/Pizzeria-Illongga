@@ -95,9 +95,10 @@
     text-transform: uppercase;
     font-size: 13px;
     height: 100%;
-    
-    
 } 
+#main-nav-ul li a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
 .nav-list{
     text-decoration: none;
     cursor: pointer;
